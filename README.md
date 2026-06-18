@@ -1,15 +1,21 @@
-I build tools for self-hosters and homelab operators, mostly around Docker, Portainer, DNS, and network privacy.
+I build operations tooling for containerized infrastructure, networking, and DNS, designed to run anywhere from a homelab to production.
 
 ### Projects
 
-- **[hosaka](https://github.com/nopoz/hosaka)** [![release](https://img.shields.io/github/v/release/nopoz/hosaka)](https://github.com/nopoz/hosaka/releases) [![CI](https://img.shields.io/github/actions/workflow/status/nopoz/hosaka/ci.yml?label=CI)](https://github.com/nopoz/hosaka/actions/workflows/ci.yml) 
-  Docker image update monitor with semver-aware classification, one-click upgrades, live console output, and notifications via Slack, Discord, Telegram, and more.
+#### [hosaka](https://github.com/nopoz/hosaka)
+[![release](https://img.shields.io/github/v/release/nopoz/hosaka)](https://github.com/nopoz/hosaka/releases) [![CI](https://img.shields.io/github/actions/workflow/status/nopoz/hosaka/ci.yml?label=CI)](https://github.com/nopoz/hosaka/actions/workflows/ci.yml)
 
-- **[pfsense-dnscrypt-proxy](https://github.com/nopoz/pfsense-dnscrypt-proxy)** [![release](https://img.shields.io/github/v/release/nopoz/pfsense-dnscrypt-proxy)](https://github.com/nopoz/pfsense-dnscrypt-proxy/releases) [![CI](https://img.shields.io/github/actions/workflow/status/nopoz/pfsense-dnscrypt-proxy/ci.yml?label=CI)](https://github.com/nopoz/pfsense-dnscrypt-proxy/actions/workflows/ci.yml)
-  A pfSense package bringing DNSCrypt, DoH, Oblivious DoH, and Anonymized DNS to your firewall with a full GUI. Signature-verified builds with SLSA provenance.
+Monitors container images across one or many hosts and drives controlled, health-aware updates: semver-aware classification, one-click upgrades with live console output, and notifications via Slack, Discord, Telegram, SMTP, and webhooks. The middle ground between risky auto-updates and manual patching.
 
-- **[portrieve](https://github.com/nopoz/portrieve)** [![release](https://img.shields.io/github/v/release/nopoz/portrieve)](https://github.com/nopoz/portrieve/releases) [![CI](https://img.shields.io/github/actions/workflow/status/nopoz/portrieve/ci.yml?label=CI)](https://github.com/nopoz/portrieve/actions/workflows/ci.yml)
-  Back up, restore, and migrate Portainer stacks as plain, git-friendly Docker Compose files. Fills the gap between blunt database backups and manual exports.
+#### [pfsense-dnscrypt-proxy](https://github.com/nopoz/pfsense-dnscrypt-proxy)
+[![release](https://img.shields.io/github/v/release/nopoz/pfsense-dnscrypt-proxy)](https://github.com/nopoz/pfsense-dnscrypt-proxy/releases) [![CI](https://img.shields.io/github/actions/workflow/status/nopoz/pfsense-dnscrypt-proxy/ci.yml?label=CI)](https://github.com/nopoz/pfsense-dnscrypt-proxy/actions/workflows/ci.yml)
+
+Brings encrypted DNS (DNSCrypt, DoH, Oblivious DoH, Anonymized DNS) to pfSense firewalls with a full management GUI. Signature-verified builds with SLSA provenance for supply-chain assurance.
+
+#### [portrieve](https://github.com/nopoz/portrieve)
+[![release](https://img.shields.io/github/v/release/nopoz/portrieve)](https://github.com/nopoz/portrieve/releases) [![CI](https://img.shields.io/github/actions/workflow/status/nopoz/portrieve/ci.yml?label=CI)](https://github.com/nopoz/portrieve/actions/workflows/ci.yml)
+
+Backs up, restores, and migrates Portainer stacks as plain, version-controllable Docker Compose files. Supports GitOps workflows, disaster recovery, and environment migration without all-or-nothing database snapshots.
 
 ### Security & CI/CD
 
@@ -26,4 +32,4 @@ I treat the pipeline as part of the product. Practices I apply across my project
 
 ### Focus areas
 
-Self-hosting · Encrypted DNS · Docker tooling · pfSense / FreeBSD packaging · CI/CD supply-chain security
+Container operations · Encrypted DNS · Network security · Backup & migration · CI/CD supply-chain security
