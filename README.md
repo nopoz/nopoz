@@ -5,7 +5,7 @@ I build operations tooling for containerized infrastructure, networking, and DNS
 #### [hosaka](https://github.com/nopoz/hosaka)
 [![release](https://img.shields.io/github/v/release/nopoz/hosaka)](https://github.com/nopoz/hosaka/releases) [![CI](https://img.shields.io/github/actions/workflow/status/nopoz/hosaka/ci.yml?label=CI)](https://github.com/nopoz/hosaka/actions/workflows/ci.yml)
 
-Monitors container images across one or many hosts and drives controlled, health-aware updates: semver-aware classification, one-click upgrades with live console output, and notifications via Slack, Discord, Telegram, SMTP, and webhooks. The middle ground between risky auto-updates and manual patching.
+Monitors container images across one or many hosts and drives controlled, health-aware updates: semver-aware classification, one-click upgrades with live console output, and notifications via Slack, Discord, Telegram, SMTP, and webhooks. On-demand AI analysis summarizes what changed between your current and target version and flags breaking changes before you upgrade.
 
 #### [pfsense-dnscrypt-proxy](https://github.com/nopoz/pfsense-dnscrypt-proxy)
 [![release](https://img.shields.io/github/v/release/nopoz/pfsense-dnscrypt-proxy)](https://github.com/nopoz/pfsense-dnscrypt-proxy/releases) [![CI](https://img.shields.io/github/actions/workflow/status/nopoz/pfsense-dnscrypt-proxy/ci.yml?label=CI)](https://github.com/nopoz/pfsense-dnscrypt-proxy/actions/workflows/ci.yml)
