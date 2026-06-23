@@ -17,6 +17,14 @@ Brings encrypted DNS (DNSCrypt, DoH, Oblivious DoH, Anonymized DNS) to pfSense f
 
 Backs up, restores, and migrates Portainer stacks as plain, version-controllable Docker Compose files. Supports GitOps workflows, disaster recovery, and environment migration without all-or-nothing database snapshots.
 
+### Demos
+
+#### [sentinel](https://github.com/nopoz/sentinel)
+
+**Stack:** Python · LangGraph · claude-agent-sdk · FastAPI · Playwright · Docker · LangSmith
+
+Investigates security alerts read-only and pauses for explicit human approval before executing any remediation. LangGraph orchestrates a plan/act/reflect loop with a structural approval gate: the only path to a state-changing action runs through a human decision, enforced by the graph rather than a prompt. Capability-separated tool policy keeps write actions physically out of reach during investigation, and a headline eval proves no remediation runs before approval. The agent drives a Dockerized Playwright browser through a mock SOC console.
+
 ### Security & CI/CD
 
 I treat the pipeline as part of the product. Practices I apply across my projects and contributions:
