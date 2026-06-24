@@ -1,4 +1,4 @@
-I build operations tooling for containerized infrastructure, networking, and DNS, designed to run anywhere from a homelab to production.
+I build operations tooling for containerized infrastructure, networking, and DNS, alongside AI agents that bring safe, supervised autonomy to that work, designed to run anywhere from a homelab to production.
 
 ### Projects
 
@@ -40,4 +40,4 @@ I treat the pipeline as part of the product. Practices I apply across my project
 
 ### Focus areas
 
-Container operations · Encrypted DNS · Network security · Backup & migration · CI/CD supply-chain security
+Agentic AI systems · Human-in-the-loop autonomy · LLM tooling & evals · AI-driven security analysis & response · Container operations · Encrypted DNS · CI/CD supply-chain security
