@@ -25,6 +25,12 @@ Backs up, restores, and migrates Portainer stacks as plain, version-controllable
 
 Investigates security alerts read-only and pauses for explicit human approval before executing any remediation. LangGraph orchestrates a plan/act/reflect loop with a structural approval gate: the only path to a state-changing action runs through a human decision, enforced by the graph rather than a prompt. Capability-separated tool policy keeps write actions physically out of reach during investigation, and a headline eval proves no remediation runs before approval. The agent drives a Dockerized Playwright browser through a mock SOC console.
 
+#### [stiletto](https://gist.github.com/nopoz/79e070cc69f7e326cc3b283b87383006)
+
+**Stack:** Python · LangGraph · Claude · FastAPI · Pydantic · Docker · LangSmith
+
+Runs a full internal pentest campaign (recon, exploitation, post-exploitation, lateral movement, persistence, and a ranked report) with a model that reasons but never touches the network. Claude returns schema-validated JSON while a LangGraph state machine owns scope and runs every tool behind a fail-closed scope guard that denies by default; the reasoning layer holds no path to a subprocess. Human-approval gates are real checkpointed graph interrupts the model cannot skip, and the brain authors exploits for operator review before they run. The operator drives the whole campaign from a live web console (FastAPI + WebSocket) that streams tool activity in real time and is where every approval gate is cleared. Every phase is MITRE ATT&CK-aligned with per-tactic KPIs and audit trails in LangSmith, and any live run replays deterministically. Source is private; demo available on request.
+
 ### Security & CI/CD
 
 I treat the pipeline as part of the product. Practices I apply across my projects and contributions:
